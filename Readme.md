@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Илья](https://up.htmlacademy.ru/adaptive/23/user/1332139).
-* Наставник: `Неизвестно`.
+* Наставник: [`Неизвестно`](https://up.htmlacademy.ru/profession/frontender/11/adaptive/user/5608).
 
 ---
 

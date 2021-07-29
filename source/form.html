@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+<!-- service information -->
 
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
 </head>
 
+<!-- header -->
+
 <body class="page__body">
     <header class="page-header">
-        <div class="page-header__main">
-            <div class="page-header__logo--block">
-                <a class="page-header__logo">
-                    <img src="img/logomobile.svg" width="33" height="37" alt="Логотип сайта Кэт энерджи">
-                </a>
-                <a class="page-header__logo--site">
-                    <img src="img/logo2mobile.svg" width="101" height="18" alt="Надпись буквами cat energy">
+        <div class="page-header__wrapper">
+            <div class="page-header__link">
+                <a class="page-header__logo logo-link">
+                    <img src="img/headermobile.svg" width="191" height="37" alt="Логотип сайта Кэт энерджи">
                 </a>
             </div>
+            <!-- navigation -->
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
             </button>
                 <div class="main-nav__container">
-                    <ul class="main_nav__list site-list">
-                        <li class="nav__list--item site-list__item--current">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--current">
                             <a>
                         Главная
                         </a>
                         </li>
-                        <li class="nav__list--item">
+                        <li class="site-list__item">
                             <a>
                         Каталог продукции
                       </a>
                         </li>
-                        <li class="nav__list--item">
+                        <li class="site-list__item">
                             <a>
                         Подбор программы
                       </a>
@@ -41,3 +42,44 @@
                 </div>
             </nav>
         </div>
+    </header>
+
+    <main class="matching">
+        <div class="matching__wrapper container">
+            <h1 class="matching__heading">Подбор программы</h1>
+        </div>
+        <form class="matching__form" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="matching__group">
+                <legend class="matching-group__text">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
+                <ul class="matching-list__programs">
+                    <li class="matching-item__name">
+                        <label class="matching-enter__name">Имя:*</label>
+                        <input class="matching-enter__interaction matching__name" id="appointment-name" type="text" name="name" placeholder="Барсик">
+                    </li>
+                    <li class="matching-item__weight">
+                        <label class="matching-enter__weight">Вес (КГ):*</label>
+                        <input class="matching-enter__interaction matching__weight" id="appointment-weight" type="text" name="weight" placeholder="7">
+                    </li>
+                    <li class="matching-item__age">
+                        <label class="matching-enter__age">Возраст (лет):*</label>
+                        <input class="matching-enter__interaction matching__age" id="appointment-age" type="text" name="age" placeholder="7">
+                    </li>
+                </ul>
+                <ul class="matching-list__checkbox">
+                    <li class="matching__checkbox">
+                        <input class="matching-enter__reduction visually-hidden" type="checkbox" name="reduction" id="checkbox-reduction" checked>
+                        <label class="matching-enter__merging" for="filter-slider">Похудение</label>
+                    </li>
+                    <li class="matching__checkbox">
+                        <input class="matching-enter__gain visually-hidden" type="checkbox" name="gain" id="checkbox-gain">
+                        <label class="matching-enter__merging" for="filter-advantages">Набор массы</label>
+                    </li>
+                    <li class="matching__checkbox">
+                        <input class="matching-enter__advice visually-hidden" type="checkbox" name="advice" id="checkbox-advice">
+                        <label class="matching-enter__merging" for="filter-news">Не знаю (нужен ваш совет)</label>
+                </ul>
+            </fieldset>
+        </form>
+
+
+    </main>

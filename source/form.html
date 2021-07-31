@@ -17,6 +17,7 @@
                 </a>
             </div>
             <!-- navigation -->
+
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
                 </button>
@@ -42,126 +43,129 @@
             </nav>
         </div>
     </header>
+
+    <!-- main -->
+
     <main class="matching">
-        <div class="matching-container">
-            <h1 class="matching-heading">Подбор программы</h1>
-        </div>
-        <form class="matching-form" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="matching-group">
-                <legend class="matching-group__text">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
-                <ul class="matching-group__programs">
-                    <li class="matching-group__name">
-                        <label class="matching-group__names">Имя:*</label>
-                        <input class="matching-group__interaction matching-name" id="appointment-name" type="text" name="name" placeholder="Барсик">
+        <div class="matching__container">
+            <h1 class="matching__heading">Подбор программы</h1>
+        <form class="matching__form" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="matching__group">
+                <legend class="matching__text">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
+                <ul class="matching__list">
+                    <li class="matching__item">
+                        <label class="matching__names">Имя:*</label>
+                        <input class="matching__interaction" id="appointment__name" type="text" name="name" placeholder="Барсик">
                     </li>
-                    <li class="matching-group__weight">
-                        <label class="matching-group__weight">Вес (КГ):*</label>
-                        <input class="matching-group__interaction matching__weight" id="appointment-weight" type="text" name="weight" placeholder="7">
+                    <li class="matching__item">
+                        <label class="matching__weight">Вес (КГ):*</label>
+                        <input class="matching__interaction" id="appointment-weight" type="text" name="weight" placeholder="7">
                     </li>
-                    <li class="matching-group__age">
-                        <label class="matching-group__age">Возраст (лет):*</label>
-                        <input class="matching-group__interaction matching__age" id="appointment-age" type="text" name="age" placeholder="7">
+                    <li class="matching__item">
+                        <label class="matching__age">Возраст (лет):*</label>
+                        <input class="matching__interaction" id="appointment-age" type="text" name="age" placeholder="7">
                     </li>
                 </ul>
-                <ul class="matching-group__checkbox">
+                <ul class="matching__checkbox">
                     <li class="matching__checkbox">
-                        <input class="matching-group__reduction visually-hidden" type="checkbox" name="reduction" id="checkbox-reduction" checked>
-                        <label class="matching-group__merging" for="checkbox-reduction">Похудение</label>
-                    </li>
-                    <li class="matching__checkbox">
-                        <input class="matching-group__gain visually-hidden" type="checkbox" name="gain" id="checkbox-gain">
-                        <label class="matching-group__merging" for="checkbox-gain">Набор массы</label>
+                        <input class="matching__reduction visually-hidden" type="checkbox" name="reduction" id="checkbox__reduction" checked>
+                        <label class="matching__merging" for="checkbox__reduction">Похудение</label>
                     </li>
                     <li class="matching__checkbox">
-                        <input class="matching-group__advice visually-hidden" type="checkbox" name="advice" id="checkbox-advice">
-                        <label class="matching-group__merging" for="checkbox-advice">Не знаю (нужен ваш совет)</label>
-                </ul>
-                <h2 class="matching-group__heading">Контактные данные (владельца кота)</h2>
-                <ul class="matching-group__owner">
-                    <li class="matching-group__detail">
-                        <label class="matching-group__email" for="appointment-email">E-mail:*</label>
-                        <input class="matching-group__enter" id="appointment-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                        <input class="matching__gain visually-hidden" type="checkbox" name="gain" id="checkbox__gain">
+                        <label class="matching__merging" for="checkbox__gain">Набор массы</label>
                     </li>
-                    <li class="matching-group__phone">
-                        <label class="matching-group__phone" for="appointment-phone">Телефон:*</label>
-                        <input class="matching-group__enter" id="appointment-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
-                    </li>
+                    <li class="matching__checkbox">
+                        <input class="matching__advice visually-hidden" type="checkbox" name="advice" id="checkbox__advice">
+                        <label class="matching__merging" for="checkbox__advice">Не знаю (нужен ваш совет)</label>
                 </ul>
-                <h2 class="matching-group__comment">Комментарий</h2>
-                <ul class="matching-group__information">
-                    <li class="matching-group__post">
-                        <label class="matching-group__letter"></label>
-                        <textarea class="matching-group__enter" name="letter" placeholder="Расскажите обо всех повадках кота" rows="10"></textarea>
+                <h2 class="matching__heading">Контактные данные (владельца кота)</h2>
+                <ul class="matching__owner">
+                    <li class="matching__detail">
+                        <label class="matching__email" for="appointment-email">E-mail:*</label>
+                        <input class="matching__enter" id="appointment-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                    </li>
+                    <li class="matching__tel">
+                        <label class="matching__phone" for="appointment-phone">Телефон:*</label>
+                        <input class="matching__enter" id="appointment-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
                     </li>
                 </ul>
-                <h2 class="matching-group__optional">Дополнительно</h2>
-                <ul class="matching-group__radiobox">
+                <h2 class="matching__comment">Комментарий</h2>
+                <ul class="matching__information">
+                    <li class="matching__post">
+                        <label class="matching__letter"></label>
+                        <textarea class="matching__enter" name="letter" placeholder="Расскажите обо всех повадках кота" rows="10"></textarea>
+                    </li>
+                </ul>
+                <h2 class="matching__optional">Дополнительно</h2>
+                <ul class="matching__extra">
                     <li class="matching__radiobox">
-                        <input class="matching-group__sweetener visually-hidden" type="checkbox" name="sweetener" id="radiobox-sweetener" checked>
-                        <label class="matching-group__merging" for="radiobox-sweetener">Cахарозаменитель</label>
+                        <input class="matching__sweetener visually-hidden" type="checkbox" name="sweetener" id="radiobox__sweetener" checked>
+                        <label class="matching__merging" for="radiobox__sweetener">Cахарозаменитель</label>
                     </li>
                     <li class="matching__radiobox">
-                        <input class="matching-group__water visually-hidden" type="checkbox" name="water" id="radiobox-water">
-                        <label class="matching-group__merging" for="radiobox-water">Питьевая вода</label>
+                        <input class="matching__water visually-hidden" type="checkbox" name="water" id="radiobox__water">
+                        <label class="matching__merging" for="radiobox__water">Питьевая вода</label>
                     </li>
                     <li class="matching__radiobox">
-                        <input class="matching-group__milk visually-hidden" type="checkbox" name="milk" id="radiobox-milk">
-                        <label class="matching-group__merging" for="radiobox-milk">Молоко</label>
+                        <input class="matching__milk visually-hidden" type="checkbox" name="milk" id="radiobox__milk">
+                        <label class="matching__merging" for="radiobox__milk">Молоко</label>
                     </li>
                     <li class="matching__radiobox">
-                        <input class="matching-group__vitamin visually-hidden" type="checkbox" name="vitamin" id="radiobox-vitamin">
-                        <label class="matching-group__merging" for="radiobox-vitamin">Витамины</label>
+                        <input class="matching__vitamin visually-hidden" type="checkbox" name="vitamin" id="radiobox__vitamin">
+                        <label class="matching__merging" for="radiobox__vitamin">Витамины</label>
                     </li>
                 </ul>
             </fieldset>
-            <button class="matching-link">Подобрать программу</button>
+            <button class="matching__link">Подобрать программу</button>
         </form>
-        <small class="matching-submit">* — Обязательные поля</small>
+        <small class="matching__submit">* — Обязательные поля</small>
+      </div>
     </main>
-    <footer class="page-footer">
-        <section class="page-footer__contacts contacts">
-            <div class="page-footer">
-                <p class="page-footer-text">Приглашаем к сотрудничеству дилеров!</p>
-                <address class="page-footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-            </div>
-        </section>
-        <div class="footer-map">
-            <img class="footer-map__img" src="img/location.png" width="320" height="362" alt="Наш адрес на google карте">
-        </div>
 
-        <div class="page-footer__heading">
-            <div class="page-footer__logo">
-                <a class="page-footer__link">
-                    <img src="img/footerlogo2.svg" width="128" height="24" alt="Логотип сайта в нижней части сайта">
-                </a>
-            </div>
-            <div class="page-footer__wrapper">
-                <ul class="page-footer__social">
-                    <li class="page-footer__list social-item">
-                        <a class="social-item__link" href="https://vk.com/htmlacademy" target="_blank"></a>
-                        <span class="visually-hidden">Vkontakte</span>
-                        <svg class="social-item__icon"></svg>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-item__link" href="https://www.instagram.com/htmlacademy/" target="_blank"></a>
-                        <span class="visually-hidden">Instagram</span>
-                        <svg class="social-item__icon"></svg>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-item__link" href="https://www.facebook.com/htmlacademy" target="_blank"></a>
-                        <span class="visually-hidden">Facebook</span>
-                        <svg class="social-item__icon"></svg>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="page-footer__copyright">
-            <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-                <span class="visually-hidden">HTML Academy</span>
-            </a>
-            <svg class="page-footer__img"></svg>
-        </div>
-    </footer>
+    <!-- footer -->
+
+    <footer class="page-footer">
+      <section class="page-footer__contacts contacts">
+          <div class="contacts__site">
+              <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+              <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+      </section>
+      <div class="page-footer__map map">
+          <img class="map__adress" src="img/location.png" width="320" height="362" alt="Наш адрес на google карте">
+      </div>
+          <div class="page-footer__logo logo">
+              <a class="logo__link">
+                  <img src="img/footerlogo2.svg" width="128" height="24" alt="Логотип сайта в нижней части сайта">
+              </a>
+          </div>
+          <div class="page-footer__social social">
+              <ul class="social__list">
+                  <li class="social__item">
+                      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"></a>
+                      <span class="visually-hidden">Vkontakte</span>
+                      <svg class="social__icon"></svg>
+                  </li>
+                  <li class="social__item">
+                      <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/" target="_blank"></a>
+                      <span class="visually-hidden">Instagram</span>
+                      <svg class="social__icon"></svg>
+                  </li>
+                  <li class="social__item">
+                      <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"></a>
+                      <span class="visually-hidden">Facebook</span>
+                      <svg class="social__icon"></svg>
+                  </li>
+              </ul>
+          </div>
+      <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <span class="visually-hidden">HTML Academy</span>
+          </a>
+          <svg class="copyright__icon"></svg>
+      </div>
+  </footer>
 </body>
 
 </html>

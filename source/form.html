@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<!-- service information(v.4) -->
+<!-- service information(v.7) -->
 
 <head>
     <meta charset="utf-8">
@@ -50,7 +50,7 @@
         <div class="matching__container">
             <h1 class="matching__heading">Подбор программы</h1>
         <form class="matching__form" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="matching__group">
+            <fieldset class="matching__form-questionnaire">
                 <legend class="matching__text">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
                 <ul class="matching__list">
                     <li class="matching__item">
@@ -59,13 +59,16 @@
                     </li>
                     <li class="matching__item">
                         <label class="matching__weight">Вес (КГ):*</label>
-                        <input class="matching__interaction" id="appointment-weight" type="text" name="weight" placeholder="7">
+                        <input class="matching__interaction" id="appointment-weight" type="number" name="weight" placeholder="7">
                     </li>
                     <li class="matching__item">
                         <label class="matching__age">Возраст (лет):*</label>
-                        <input class="matching__interaction" id="appointment-age" type="text" name="age" placeholder="7">
+                        <input class="matching__interaction" id="appointment-age" type="number" name="age" placeholder="7">
                     </li>
                 </ul>
+            </fieldset>
+
+            <fieldset class="matching__form-parameters">
                 <ul class="matching__checkbox">
                     <li class="matching__checkbox">
                         <input class="matching__reduction visually-hidden" type="checkbox" name="reduction" id="checkbox__reduction" checked>
@@ -79,6 +82,9 @@
                         <input class="matching__advice visually-hidden" type="checkbox" name="advice" id="checkbox__advice">
                         <label class="matching__merging" for="checkbox__advice">Не знаю (нужен ваш совет)</label>
                 </ul>
+              </fieldset>
+
+              <fieldset class="matching__form-owner">
                 <h2 class="matching__heading">Контактные данные (владельца кота)</h2>
                 <ul class="matching__owner">
                     <li class="matching__detail">
@@ -90,6 +96,9 @@
                         <input class="matching__enter" id="appointment-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
                     </li>
                 </ul>
+              </fieldset>
+
+              <fieldset class="matching__form-comments">
                 <h2 class="matching__comment">Комментарий</h2>
                 <ul class="matching__information">
                     <li class="matching__post">
@@ -97,6 +106,9 @@
                         <textarea class="matching__enter" name="letter" placeholder="Расскажите обо всех повадках кота" rows="10"></textarea>
                     </li>
                 </ul>
+              </fieldset>
+
+              <fieldset class="matching__form-extra">
                 <h2 class="matching__optional">Дополнительно</h2>
                 <ul class="matching__extra">
                     <li class="matching__radiobox">
@@ -117,7 +129,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <button class="matching__link">Подобрать программу</button>
+            <a class="matching__link" href="#">Подобрать программу</a>
         </form>
         <small class="matching__submit">* — Обязательные поля</small>
       </div>

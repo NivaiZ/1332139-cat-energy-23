@@ -85,7 +85,7 @@
               </fieldset>
 
               <fieldset class="matching__form-owner">
-                <h2 class="matching__heading">Контактные данные (владельца кота)</h2>
+                <legend class="matching__heading">Контактные данные (владельца кота)</legend>
                 <ul class="matching__owner">
                     <li class="matching__detail">
                         <label class="matching__email" for="appointment-email">E-mail:*</label>
@@ -93,13 +93,13 @@
                     </li>
                     <li class="matching__tel">
                         <label class="matching__phone" for="appointment-phone">Телефон:*</label>
-                        <input class="matching__enter" id="appointment-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
+                        <input class="matching__enter" id="appointment-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
                     </li>
                 </ul>
               </fieldset>
 
               <fieldset class="matching__form-comments">
-                <h2 class="matching__comment">Комментарий</h2>
+                <legend class="matching__comment">Комментарий</legend>
                 <ul class="matching__information">
                     <li class="matching__post">
                         <label class="matching__letter"></label>
@@ -109,7 +109,7 @@
               </fieldset>
 
               <fieldset class="matching__form-extra">
-                <h2 class="matching__optional">Дополнительно</h2>
+                <legend class="matching__optional">Дополнительно</legend>
                 <ul class="matching__extra">
                     <li class="matching__radiobox">
                         <input class="matching__sweetener visually-hidden" type="checkbox" name="sweetener" id="radiobox__sweetener" checked>
@@ -155,27 +155,31 @@
           <div class="page-footer__social social">
               <ul class="social__list">
                   <li class="social__item">
-                      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"></a>
+                      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
+                        <svg class="social__icon"></svg>
                       <span class="visually-hidden">Vkontakte</span>
-                      <svg class="social__icon"></svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                      <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/" target="_blank"></a>
+                      <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/" target="_blank">
+                        <svg class="social__icon"></svg>
                       <span class="visually-hidden">Instagram</span>
-                      <svg class="social__icon"></svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                      <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"></a>
+                      <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
+                        <svg class="social__icon"></svg>
                       <span class="visually-hidden">Facebook</span>
-                      <svg class="social__icon"></svg>
+                    </a>
                   </li>
               </ul>
           </div>
       <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="visually-hidden">HTML Academy</span>
+              <svg class="copyright__icon"></svg>
           </a>
-          <svg class="copyright__icon"></svg>
+
       </div>
   </footer>
 </body>

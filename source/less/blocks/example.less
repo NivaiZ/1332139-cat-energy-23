@@ -1,0 +1,112 @@
+.example {
+background-color: @example__heading;
+}
+.example__heading {
+font-size: 36px;
+line-height: 40px;
+font-weight: 400;
+font-family: "Oswald","Arial",sans-serif;
+color:@programs__link;
+}
+.example__text {
+font-family: Arial;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color:@argument__color;
+}
+.example__number {
+font-family: Oswald;
+color:@programs__link;
+font-size: 24px;
+line-height: 24px;
+}
+.example__text-small {
+font-family: Arial;
+font-size: 12px;
+line-height: 12px;
+color:@argument__color;
+}
+.example__stats {
+border: 1px solid #CDCDCD;
+box-sizing: border-box;
+border-radius: 3px;
+display: flex;
+flex-direction: column;
+}
+.example__total {
+font-family: Oswald;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-transform: uppercase;
+text-align: center;
+}
+.example__before {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+.example__after {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.controls__before {
+font-family: Oswald;
+font-weight: 400;
+text-transform: uppercase;
+left: calc(50% - 49px/2);
+font-size: 16px;
+line-height: 20px;
+cursor: pointer;
+}
+.controls__after {
+font-family: Oswald;
+font-weight: 400;
+text-transform: uppercase;
+left: calc(50% - 49px/2);
+font-size: 16px;
+line-height: 20px;
+cursor: pointer;
+}
+.example__scale {
+height: 14px;
+background-color: @example__toggle--scale;
+border: 1px solid @example__toggle;
+border-radius: 6px;
+width: 84px;
+    margin: 3px 18px;
+}
+.scale__button {
+top: 50%;
+left: 5px;
+width: 35px;
+height: 6px;
+margin-top: 4px;
+padding: 0;
+background-color: #68b738;
+border: 0;
+border-radius: 3px;
+overflow: hidden;
+}
+.example__controls {
+display: flex;
+flex-direction: row;
+
+}

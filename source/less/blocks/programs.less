@@ -5,7 +5,16 @@
   padding-top: 24px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: @whitesmoke;
+  background-color: @white--light;
+}
+
+.programs__text {
+  font-family: @deafult-font--second;
+  font-style: @deafult-style--first;
+  font-weight: @deafult-weight--first;
+  font-size: 16px;
+  line-height: 24px;
+  color: @black--basic;
 }
 
 .programs__item--slim::before {
@@ -15,7 +24,7 @@
   content: url("../img/catbackslim.svg");
 }
 
-.programs__item--pro:before {
+.programs__item--pro::before {
   width: 67px;
   height: 50px;
   position: absolute;
@@ -23,14 +32,15 @@
 }
 
 .programs__link {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  font-family: @deafult-font--first;
+  font-weight: @deafult-weight--first;
+  font-style: @deafult-style--first;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
-  color: @black;
-  padding: 4px 0px;
-  text-transform: uppercase;
+  color: @black--basic;
+  padding: 4px;
+  text-transform: @use-uppercase;
 
   &::after {
     margin-top: 0;
@@ -41,10 +51,11 @@
 }
 
 .programs__heading {
+  font-family: @deafult-font--first;
+  font-style: @deafult-style--first;
+  text-transform: @use-uppercase;
   margin-left: 70px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: @deafult-weight--first;
   line-height: 38px;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
 }

@@ -1,21 +1,22 @@
 .matching__heading,
 .matching__comment,
 .matching__optional {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
+  font-family: @deafult-font--first;
+  font-style: @deafult-style--first;
+  font-weight: @deafult-weight--first;
   font-size: 36px;
   line-height: 36px;
-  color: @black;
+  color: @black--basic;
   margin-bottom: 35px;
 }
 
 .matching__text {
-  font-family: Oswald;
-  font-weight: 400;
+  font-family: @deafult-font--first;
+  font-style: @deafult-style--first;
+  font-weight: @deafult-weight--first;
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
+  text-transform: @use-uppercase;
   margin-bottom: 39px;
 }
 
@@ -29,23 +30,24 @@
 }
 
 .matching__interaction {
-  font-family: Oswald;
-  font-weight: 400;
+  font-family: @deafult-font--first;
+  font-style: @deafult-style--first;
+  font-weight: @deafult-weight--first;
   font-size: 16px;
   line-height: 18px;
   align-items: center;
-  text-transform: uppercase;
-  color: @charcoal;
-
+  text-transform: @use-uppercase;
+  color: @gray--middle;
 }
 
 .matching__group {
-  font-family: Oswald;
-  font-weight: 400;
+  font-family: @deafult-font--first;
+  font-style: @deafult-style--first;
+  font-weight: @deafult-weight--first;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
-  color: @charcoal;
+  text-transform: @use-uppercase;
+  color: @gray--middle;
 }
 
 .matching__form-questionnaire {
@@ -55,20 +57,19 @@
 
 .matching__form-parameters {
   border: none;
+  margin-bottom: 15px;
 }
 
 .matching__merging {
+  font-family: @deafult-font--first;
+  text-transform: @use-uppercase;
+  font-weight: @deafult-weight--first;
+  font-style: @deafult-style--first;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 46px;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-}
-
-.matching__form-parameters {
-  margin-bottom: 15px;
 }
 
 .matching__checkbox {
@@ -80,7 +81,8 @@
   padding: 0;
 }
 
-.matching__more+label::before {
+.matching__more + label::before {
+  cursor: pointer;
   content: url("../img/radiobuttonactive.svg");
   position: absolute;
   left: 0;
@@ -88,7 +90,7 @@
   height: 30px;
 }
 
-.matching__more:checked+label::before {
+.matching__more:checked + label::before {
   content: url("../img/radioon.svg");
   position: absolute;
   width: 30px;
@@ -114,24 +116,26 @@
 
 .matching__number {
   margin-right: 11px;
-  font-family: Oswald;
-  font-weight: 400;
+  font-family: @deafult-font--first;
+  font-style: @deafult-style--first;
+  font-weight: @deafult-weight--first;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
+  text-transform: @use-uppercase;
 }
 
 .matching__enter {
-  font-family: Oswald;
-  font-weight: 400;
+  font-family: @deafult-font--first;
+  font-weight: @deafult-weight--first;
+  font-style: @deafult-style--first;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
-  color: @charcoal;
+  text-transform: @use-uppercase;
+  color: @gray--middle;
 }
 
 .matching__intel {
-  border: 1px solid @platinum;
+  border: 1px solid @gray--extra;
   box-sizing: border-box;
   width: 280px;
   height: 150.52px;
@@ -151,7 +155,7 @@
   padding: 0;
 }
 
-.matching__additionally+label::before {
+.matching__additionally + label::before {
   content: url("../img/checkboxoff.svg");
   position: absolute;
   left: 0;
@@ -159,7 +163,7 @@
   height: 30px;
 }
 
-.matching__additionally:checked+label::before {
+.matching__additionally:checked + label::before {
   content: url("../img/checkboxon.svg");
   position: absolute;
   width: 26px;
@@ -170,14 +174,14 @@
   padding: 14px 44px;
   border: none;
   width: 280px;
-
 }
 
 .matching__submit {
-  font-family: Arial;
-  font-weight: 400;
+  font-family: @deafult-font--second;
+  font-weight: @deafult-weight--first;
+  font-style: @deafult-style--first;
   font-size: 14px;
   line-height: 16px;
-  color: @black;
+  color: @black--basic;
   margin-left: 82px;
 }

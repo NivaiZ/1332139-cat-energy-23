@@ -1,8 +1,8 @@
 .argument__heading {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @deafult-font--first;
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
+  font-weight: @deafult-weight--first;
 }
 
 .argument__list {
@@ -12,12 +12,13 @@
 }
 
 .argument__list-item {
-  font-family: Arial;
+  font-family: @deafult-font--second;
+  font-weight: @deafult-weight--first;
   font-size: 14px;
   line-height: 18px;
   display: flex;
   flex-direction: row;
-  color: @charcoal;
+  color: @gray--middle;
   margin-bottom: 20px;
 }
 

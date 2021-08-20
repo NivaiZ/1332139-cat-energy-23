@@ -1,0 +1,61 @@
+.programs__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: @white--light;
+}
+
+.programs__text {
+  font-family: @extra-font;
+  font-style: @deafult-style;
+  font-weight: @deafult-weight;
+  font-size: 16px;
+  line-height: 24px;
+  color: @black--basic;
+}
+
+.programs__item--slim::before {
+  width: 50px;
+  height: 53px;
+  position: absolute;
+  content: url("../img/catbackslim.svg");
+}
+
+.programs__item--pro::before {
+  width: 67px;
+  height: 50px;
+  position: absolute;
+  content: url("../img/catbackpro.svg");
+}
+
+.programs__link {
+  font-family: @deafult-font;
+  font-weight: @deafult-weight;
+  font-style: @deafult-style;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: @black--basic;
+  padding: 4px;
+  text-transform: @use-uppercase;
+
+  &::after {
+    margin-top: 0;
+    margin-left: 15px;
+    position: absolute;
+    content: url("../img/icon.svg");
+  }
+}
+
+.programs__heading {
+  font-family: @deafult-font;
+  font-style: @deafult-style;
+  text-transform: @use-uppercase;
+  margin-left: 70px;
+  font-size: 24px;
+  font-weight: @deafult-weight;
+  line-height: 38px;
+}

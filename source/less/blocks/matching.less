@@ -1,0 +1,187 @@
+.matching__heading,
+.matching__comment,
+.matching__optional {
+  font-family: @deafult-font;
+  font-style: @deafult-style;
+  font-weight: @deafult-weight;
+  font-size: 36px;
+  line-height: 36px;
+  color: @black--basic;
+  margin-bottom: 35px;
+}
+
+.matching__text {
+  font-family: @deafult-font;
+  font-style: @deafult-style;
+  font-weight: @deafult-weight;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: @use-uppercase;
+  margin-bottom: 39px;
+}
+
+.matching__item {
+  display: flex;
+}
+
+.matching__list {
+  margin: 0;
+  padding: 0;
+}
+
+.matching__interaction {
+  font-family: @deafult-font;
+  font-style: @deafult-style;
+  font-weight: @deafult-weight;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: @use-uppercase;
+  color: @gray--middle;
+}
+
+.matching__group {
+  font-family: @deafult-font;
+  font-style: @deafult-style;
+  font-weight: @deafult-weight;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: @use-uppercase;
+  color: @gray--middle;
+}
+
+.matching__form-questionnaire {
+  border: none;
+  text-decoration: none;
+}
+
+.matching__form-parameters {
+  border: none;
+  margin-bottom: 15px;
+}
+
+.matching__merging {
+  font-family: @deafult-font;
+  text-transform: @use-uppercase;
+  font-weight: @deafult-weight;
+  font-style: @deafult-style;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.matching__checkbox {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.matching__more + label::before {
+  cursor: pointer;
+  content: url("../img/radiobuttonactive.svg");
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.matching__more:checked + label::before {
+  content: url("../img/radioon.svg");
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.matching__form-owner,
+.matching__form-comments,
+.matching__form-extra {
+  border: none;
+}
+
+.matching__owner,
+.matching__information {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.matching__detail {
+  display: flex;
+}
+
+.matching__number {
+  margin-right: 11px;
+  font-family: @deafult-font;
+  font-style: @deafult-style;
+  font-weight: @deafult-weight;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: @use-uppercase;
+}
+
+.matching__enter {
+  font-family: @deafult-font;
+  font-weight: @deafult-weight;
+  font-style: @deafult-style;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: @use-uppercase;
+  color: @gray--middle;
+}
+
+.matching__intel {
+  border: 1px solid @gray--extra;
+  box-sizing: border-box;
+  width: 280px;
+  height: 150.52px;
+}
+
+.matching__extra {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.matching__radiobox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.matching__additionally + label::before {
+  content: url("../img/checkboxoff.svg");
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.matching__additionally:checked + label::before {
+  content: url("../img/checkboxon.svg");
+  position: absolute;
+  width: 26px;
+  height: 26px;
+}
+
+.matching__link {
+  padding: 14px 44px;
+  border: none;
+  width: 280px;
+}
+
+.matching__submit {
+  font-family: @extra-font;
+  font-weight: @deafult-weight;
+  font-style: @deafult-style;
+  font-size: 14px;
+  line-height: 16px;
+  color: @black--basic;
+  margin-left: 82px;
+}

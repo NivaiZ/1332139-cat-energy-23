@@ -3,12 +3,30 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: @deafult-weight;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: @deafult-font;
+    font-weight: @deafult-weight;
+  }
 }
 
 .argument__list {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .argument__list-item {
@@ -16,10 +34,29 @@
   font-weight: @deafult-weight;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
-  flex-direction: row;
-  color: @gray--middle;
-  margin-bottom: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: row;
+    font-family: @extra-font;
+    font-weight: @deafult-weight;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-family: @extra-font;
+    font-weight: @deafult-weight;
+    font-size: 14px;
+    line-height: 24px;
+
+    @media (min-width: @desktop-width) {
+      font-family: @extra-font;
+      font-weight: @deafult-weight;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
 
 .argument__list-item::before {

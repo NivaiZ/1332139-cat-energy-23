@@ -19,6 +19,24 @@
 
 .main-nav__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style: none;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  margin-top: 1px;
+
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
 }

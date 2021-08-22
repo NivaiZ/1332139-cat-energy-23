@@ -1,3 +1,11 @@
+.page-footer__inner {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__logo {
   margin-top: 39px;
   text-align: center;
@@ -6,4 +14,8 @@
 .page-footer__social {
   border: 1px solid @black--10;
   border-width: 1px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

@@ -1,11 +1,28 @@
+.programs {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
 .programs__item {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  padding-top: 24px;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: grid;
+  row-gap: 20px;
   background-color: @white--light;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    width: 708px;
+    height: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 374px;
+  }
 }
 
 .programs__text {
@@ -22,6 +39,12 @@
   height: 53px;
   position: absolute;
   content: url("../img/catbackslim.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    content: url("../img/catblacktablets.svg");
+  }
 }
 
 .programs__item--pro::before {
@@ -29,6 +52,13 @@
   height: 50px;
   position: absolute;
   content: url("../img/catbackpro.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    position: absolute;
+    content: url("../img/catblacktablet.svg");
+  }
 }
 
 .programs__link {

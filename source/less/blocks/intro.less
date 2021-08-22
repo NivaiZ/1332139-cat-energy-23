@@ -1,15 +1,54 @@
+.intro {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.intro__content {
+  @media (min-width: @desktop-width) {
+    width: 414px;
+  }
+}
+
 .intro__heading {
   font-family: @deafult-font;
   font-style: @deafult-style;
   font-weight: @deafult-weight;
   font-size: 36px;
   line-height: 36px;
-  color: @white--10;
+  color: @white--basic;
+
+  @media (min-width: @tablet-width) {
+    font-family: @deafult-font;
+    font-style: @deafult-style;
+    font-weight: @deafult-weight;
+    font-size: 60px;
+    line-height: 60px;
+    width: 516px;
+    color: @black--basic;
+  }
 }
 
-.intro__content {
+.intro__container {
+  display: inline-block;
   background-image: url("/img/bgimg.jpg");
   background-repeat: no-repeat;
+  width: 320px;
+  height: 302px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/indexcantablet.png");
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    background-image: url("/img/indexcandesktop.png");
+    right: 50%;
+  }
 }
 
 .intro__text {
@@ -20,4 +59,27 @@
   line-height: 14px;
   color: @white--basic;
   text-transform: @use-uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-family: @deafult-font;
+    font-style: @deafult-style;
+    font-weight: @deafult-weight;
+    font-size: 20px;
+    line-height: 20px;
+    color: @black--basic;
+  }
+}
+
+.intro__img {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.intro__link {
+  margin-top: 55px;
 }

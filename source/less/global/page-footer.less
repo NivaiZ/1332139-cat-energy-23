@@ -1,9 +1,35 @@
+.page-footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @white--light;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .page-footer__logo {
   margin-top: 39px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
 .page-footer__social {
-  border: 1px solid @black--10;
-  border-width: 1px;
+  border: 1px solid @gray--85;
+  width: 280px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.page-footer__copyright {
+  width: 100%;
 }

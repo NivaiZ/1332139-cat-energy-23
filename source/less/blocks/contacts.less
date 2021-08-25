@@ -1,7 +1,21 @@
 .contacts__site {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   padding: 27px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    background-color: @white--basic;
+    position: absolute;
+    top: 250%;
+    left: 7%;
+    width: 25%;
+  }
 }
 
 .contacts__text {
@@ -11,6 +25,12 @@
   line-height: 20px;
   color: @gray--darken;
   text-transform: @use-uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 171px;
+  }
 }
 
 .contacts__adress {
@@ -20,4 +40,10 @@
   line-height: 20px;
   color: @gray--middle;
   margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 159px;
+  }
 }

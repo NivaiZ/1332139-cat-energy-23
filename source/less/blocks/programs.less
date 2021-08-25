@@ -1,11 +1,31 @@
-.programs__item {
+.programs {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  padding-top: 24px;
-  padding-right: 20px;
-  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.programs__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   background-color: @white--light;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+    padding: 77px 60px 62px 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 15px;
+  }
 }
 
 .programs__text {
@@ -15,6 +35,14 @@
   font-size: 16px;
   line-height: 24px;
   color: @black--basic;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 85%;
+  }
 }
 
 .programs__item--slim::before {
@@ -22,6 +50,22 @@
   height: 53px;
   position: absolute;
   content: url("../img/catbackslim.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    content: url("../img/catblacktablets.svg");
+    right: 30px;
+    left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 106px;
+    content: url("../img/catslimdesk.svg");
+    position: absolute;
+    left: 2%;
+  }
 }
 
 .programs__item--pro::before {
@@ -29,6 +73,22 @@
   height: 50px;
   position: absolute;
   content: url("../img/catbackpro.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    position: absolute;
+    content: url("../img/catblacktablet.svg");
+    right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 56px;
+    content: url("../img/catprodesk.svg");
+    position: absolute;
+    left: 55%;
+  }
 }
 
 .programs__link {
@@ -58,4 +118,9 @@
   font-size: 24px;
   font-weight: @deafult-weight;
   line-height: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

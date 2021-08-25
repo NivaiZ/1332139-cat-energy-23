@@ -1,15 +1,39 @@
+.intro {
+  background-image: url("../img/bgimg.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/indexcantablet.png");
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    width: 100%;
+    height: 826px;
+    background-position-x: 50%;
+    background-position-y: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/indexcandesktop.png");
+    background-repeat: no-repeat;
+    background-position: 70%;
+    width: 100%;
+  }
+}
+
 .intro__heading {
   font-family: @deafult-font;
   font-style: @deafult-style;
   font-weight: @deafult-weight;
   font-size: 36px;
   line-height: 36px;
-  color: @white--10;
-}
+  color: @white--basic;
 
-.intro__content {
-  background-image: url("/img/bgimg.jpg");
-  background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 516px;
+    color: @black--basic;
+  }
 }
 
 .intro__text {
@@ -20,4 +44,26 @@
   line-height: 14px;
   color: @white--basic;
   text-transform: @use-uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black--basic;
+  }
+}
+
+.intro__img {
+  margin-top: 1px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.intro__content {
+  margin-right: 1px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 100px;
+  }
 }

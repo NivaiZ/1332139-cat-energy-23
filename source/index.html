@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<!-- service information(v.14) -->
+<!-- service information(v.15) -->
 
 <head>
   <meta charset="utf-8">
@@ -55,8 +55,12 @@
           <h1 class="intro__heading">Функциональное питание для котов</h1>
           <p class="intro__text">Занялся собой? Займись котом!</p>
           <picture>
-            <img class="intro__img" src="img/indexcanmobile1.png" width="280" height="270"
+            <img class="intro__img intro__img--mobile" src="img/indexcanmobile1.png" width="280" height="270"
               alt="Изображение cat energy со вкусом курицы">
+              <img class="intro__img intro__img--tablet" src="/img/indexcantablet.png" width="709" height="609"
+              alt="Изображение cat energy со вкусом курицы. Версия для планшета">
+            <img class="intro__img intro__img--desktop" src="/img/indexcandesktop.png" width="550" height="499"
+              alt="Изображение cat energy со вкусом курицы. Версия для компьютера">
           </picture>
           <a class="intro__link main-button" href="form.html">
             Подобрать программу
@@ -97,8 +101,8 @@
       </div>
     </section>
 
-    <section class="example container">
-      <div class="example__item">
+    <section class="example">
+      <div class="example__description container">
         <h2 class="example__heading">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -120,10 +124,10 @@
         <input class="example__after visually-hidden" type="radio" id="example__after" name="input__after">
         <div class="example__slider">
           <picture>
-          <img class="example__img example__slider--before" src="img/beforemobile.png" width="311" height="232"
-            alt="Изображение пухлого кота до принятия cat energy">
-          <img class="example__img example__slider--arfer" src="img/aftermobile.png" width="251" height="240"
-            alt="Изображение худого кота после принятия cat energy">
+            <img class="example__img example__slider--before" src="img/beforemobile.png" width="311" height="232"
+              alt="Изображение пухлого кота до принятия cat energy">
+            <!-- <img class="example__img example__slider--arfer" src="img/aftermobile.png" width="251" height="240"
+            alt="Изображение худого кота после принятия cat energy"> -->
           </picture>
         </div>
         <div class="example__controls controls">
@@ -139,8 +143,8 @@
 
   <!-- footer -->
 
-  <footer class="page-footer container">
-    <section class="page-footer__contacts contacts">
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts container">
       <div class="contacts__site">
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>

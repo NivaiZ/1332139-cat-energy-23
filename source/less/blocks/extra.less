@@ -15,19 +15,28 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: @use-uppercase;
+  border-top: 1px solid @gray--ligth;
+  padding: 13px 0px 0px 0px;
+  margin: 0px;
 }
 
 .extra__link {
+  margin-top: 11px;
   text-decoration: none;
 }
 
 .extra__list {
+  padding-left: 0px;
   list-style: none;
 }
 
 .extra__item {
   display: flex;
   flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .extra__table {

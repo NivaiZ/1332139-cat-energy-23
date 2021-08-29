@@ -1,26 +1,65 @@
 .extra-promo {
-  width: 280px;
+  width: 100%;
   height: 289px;
   background-image: url("../img/giftphoto.jpg");
   background-repeat: no-repeat;
+  background-color: @green--85;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catgifttablet.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catgiftdesktop.png");
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 289px;
+    background-color: unset;
+    margin-bottom: 1px;
+  }
 }
 
 .extra-promo__link {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   font-family: @extra-font;
   font-weight: @deafult-weight;
   font-size: 16px;
   line-height: 20px;
   color: @white--basic;
   text-decoration: none;
+  padding-top: 82px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 63px;
+    padding-left: 93px;
+    justify-items: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .extra-promo__text {
-  margin-top: 75px;
+  margin-top: 32px;
   margin-left: 36px;
+  width: 53%;
+
+  @media (min-width: @tablet-width) {
+    width: 45%;
+    margin-top: 25px;
+    margin-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
 }

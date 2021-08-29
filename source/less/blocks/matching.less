@@ -54,7 +54,7 @@
   margin-bottom: 39px;
   max-width: 226px;
 
-  @media (min-width: @tablet-width ) {
+  @media (min-width: @tablet-width) {
     min-width: 323px;
     font-size: 20px;
     line-height: 30px;
@@ -91,7 +91,6 @@
   margin-bottom: 13px;
   height: 45px;
   padding-left: 16px;
-  -webkit-appearance: none;
 
   @media (min-width: @tablet-width) {
     height: 52px;
@@ -112,7 +111,7 @@
   color: @gray--special;
   flex-shrink: 0;
 
-  @media (min-width: @tablet-width ) {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -164,7 +163,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
 }
 
 .matching__checkbox {
@@ -176,7 +174,7 @@
   padding: 0;
 }
 
-.matching__more+label::before {
+.matching__more + label::before {
   cursor: pointer;
   content: url("../img/radiobuttonactive.svg");
   position: absolute;
@@ -185,7 +183,7 @@
   height: 30px;
 }
 
-.matching__more:checked+label::before {
+.matching__more:checked + label::before {
   content: url("../img/radioon.svg");
   position: absolute;
   width: 30px;
@@ -299,7 +297,6 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
   }
-
 }
 
 .matching__radiobox {
@@ -310,7 +307,7 @@
   padding: 0;
 }
 
-.matching__additionally+label::before {
+.matching__additionally + label::before {
   content: url("../img/checkboxoff.svg");
   position: absolute;
   left: 0;
@@ -318,7 +315,7 @@
   height: 30px;
 }
 
-.matching__additionally:checked+label::before {
+.matching__additionally:checked + label::before {
   content: url("../img/checkboxon.svg");
   position: absolute;
   width: 26px;
@@ -365,10 +362,4 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }

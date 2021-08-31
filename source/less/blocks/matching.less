@@ -127,22 +127,33 @@
 }
 
 .matching__form-parameters {
-  border: 1px solid @gray--85;
-  border-left: none;
-  border-right: none;
+  border: none;
   margin-bottom: 15px;
 
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      border: 1px solid @gray--85;
+      border-left: none;
+      border-right: none;
+      content: "";
+      position: absolute;
+      top: 477px;
+      left: 3px;
+      right: 1px;
+      bottom: 261px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    border: 1px solid @gray--extra;
     box-sizing: border-box;
     max-width: 630px;
     margin-bottom: 71px;
+    border: 1px solid @gray--extra;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 100%;
     margin-top: 104px;
-    margin-left: 80px;
     margin-bottom: 80px;
     padding: 14px 44px;
   }
@@ -193,7 +204,6 @@
 .matching__form-owner,
 .matching__form-comments,
 .matching__form-extra {
-  min-width: 100%;
   border: none;
 }
 
@@ -361,5 +371,6 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }

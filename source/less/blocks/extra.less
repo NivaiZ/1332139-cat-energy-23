@@ -21,15 +21,16 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: @use-uppercase;
-  border-top: 1px solid @gray--ligth;
   padding: 13px 1px 1px 1px;
   margin: 1px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 25px;
   }
 }
+
 
 .extra__link {
   margin-top: 11px;
@@ -53,6 +54,7 @@
 .extra__item {
   display: grid;
   grid-template-columns: 1fr;
+  border: 1px solid @gray--ligth;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -70,7 +72,7 @@
 
   @media (min-width: @tablet-width) {
     align-content: stretch;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-end;
   }
 
@@ -88,6 +90,7 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: -1;
+    margin-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {

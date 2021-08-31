@@ -8,7 +8,7 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -20,7 +20,6 @@
 
 .page-footer__social {
   border: 1px solid @gray--85;
-  width: 280px;
   border-left: none;
   border-right: none;
   margin-bottom: 22px;
@@ -32,4 +31,16 @@
 
 .page-footer__copyright {
   width: 100%;
+}
+
+.page-footer__style {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: baseline;
+    max-width: 1440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+  }
 }

@@ -29,8 +29,8 @@
     line-height: 60px;
 
     @media (min-width: @desktop-width) {
-      position: absolute;
-      top: 164%;
+      position: relative;
+      top: -25%;
     }
   }
 }
@@ -159,5 +159,10 @@
 .example__description {
   @media (min-width: @tablet-width) {
     background-color: @white--basic;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @white--light;
+    width: 100%;
   }
 }

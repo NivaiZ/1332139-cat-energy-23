@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<!-- service information(v.17) -->
+<!-- service information(v.18) -->
 
 <head>
   <meta charset="utf-8">
@@ -14,30 +14,30 @@
 <!-- header -->
 
 <body class="page-body">
-  <header class="page-header container">
+  <header class="page-header page-header--index container">
     <div class="page-header__content">
       <div class="page-header__link">
         <a class="page-header__logo">
           <img src="img/headermobile.svg" width="191" height="37" alt="Логотип сайта Кэт энерджи">
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="main-nav__nolink">
+            <a class="main-nav__nolink main-nav__nolink--index">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--index" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -114,7 +114,7 @@
             <p class="example__number">60 ДНЕЙ</p>
             <p class="example__text-small">затрачено времени</p>
           </div>
-          <p class="example__total">Затраты на питание: 15 000 РУБ. </p>
+          <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
         </div>
       </div>
       <div class="example__item">
@@ -131,7 +131,7 @@
         <div class="example__controls controls">
           <label class="controls__before" for="example__before">Было</label>
           <div class="example__scale scale">
-            <button class="scale__button" type="button">До/После</button>
+            <button class="scale__button" type="button"></button>
           </div>
           <label class="controls__after" for="example__after">Стало</label>
         </div>
@@ -212,6 +212,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

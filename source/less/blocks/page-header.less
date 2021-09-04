@@ -1,15 +1,43 @@
-.page-header__content {
-  margin-left: 1px;
+.page-header--index::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 694px;
+    background-image: url("/img/indexbgdesk.png");
+    background-repeat: no-repeat;
+    max-width: 720px;
+    max-height: 693px;
+    width: 100%;
+  }
+}
 
+.page-header__content {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    max-height: 54px;
+    margin-top: 24px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: start;
+    margin-top: 53px;
+  }
+}
+
+.page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

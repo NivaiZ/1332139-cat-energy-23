@@ -5,8 +5,32 @@
   font-size: 36px;
   line-height: 36px;
   color: @black--basic;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      border: 2px solid @green--additionally;
+      top: 7%;
+      width: 64px;
+      left: 278px;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      margin-top: 48px;
+      left: 140px;
+      border: 2px solid @white--basic;
+    }
+  }
 }
 
 .site-list__item {
-  margin-left: -10px;
+  margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    width: max-content;
+  }
 }

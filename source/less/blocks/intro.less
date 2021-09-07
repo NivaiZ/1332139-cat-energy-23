@@ -1,21 +1,19 @@
 .intro {
   @media (max-width: @mobile-width-only) {
-    background-color: @green--extra;
-    background-image: url("../img/bgimg.jpg");
+    background-image: linear-gradient(to top, @white--basic 175px, transparent 0), url("../img/bgimg.jpg");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-color: @green--80;
+    background-position: center, top;
   }
 
   @media (min-width: @tablet-width) {
-    justify-content: flex-start;
-    width: 100%;
-    height: 826px;
-    background-position-x: 50%;
-    background-position-y: 150px;
+    position: relative;
+    min-height: 862px;
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 70%;
-    width: 100%;
+    min-height: 583px;
   }
 }
 
@@ -26,12 +24,14 @@
   font-size: 36px;
   line-height: 36px;
   color: @white--basic;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     max-width: 414px;
     color: @black--basic;
+    text-align: initial;
   }
 }
 
@@ -48,6 +48,7 @@
     font-size: 20px;
     line-height: 20px;
     color: @black--basic;
+    padding-top: 21px;
   }
 }
 
@@ -56,9 +57,64 @@
   display: none;
 }
 
+.intro__container {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+}
 
 .intro__content {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 111px;
+  }
+}
+
+.intro__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: @tablet-width) {
-    margin-left: 100px;
+    display: none;
+  }
+}
+
+.intro__img--tablet {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    z-index: -2;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.intro__img--mobile {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+}
+
+.intro__img--desktop {
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 70px;
+    right: 224px;
   }
 }

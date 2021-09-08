@@ -1,34 +1,37 @@
-.page-header--index::before {
+.page-header {
+  @media (max-width: @mobile-width-only) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-header--index {
   @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    min-height: 694px;
-    background-image: url("../img/indexbgdesk.png");
+    background-image: url("../img/indexbgdesk.jpg"), linear-gradient(90deg, @white--basic 50%, @green--50 50%);
+    background-position: 99% 0%;
     background-repeat: no-repeat;
-    max-width: 720px;
-    max-height: 693px;
-    width: 100%;
+    margin-bottom: 85px;
   }
 }
 
 .page-header__content {
+  @media (max-width: @mobile-width-only) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     flex-wrap: nowrap;
-    max-height: 54px;
-    margin-top: 24px;
+    align-items: flex-end;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
-    margin-top: 53px;
+    align-items: center;
+    padding-top: 50px;
   }
 }
 

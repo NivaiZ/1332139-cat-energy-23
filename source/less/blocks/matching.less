@@ -35,7 +35,7 @@
   font-size: 24px;
   line-height: 26px;
   color: @black--basic;
-  margin-bottom: 22px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -137,10 +137,10 @@
       border-right: none;
       content: "";
       position: absolute;
-      top: 390px;
+      top: 477px;
       left: 3px;
       right: 1px;
-      bottom: 340px;
+      bottom: 261px;
     }
   }
 
@@ -205,17 +205,6 @@
 .matching__form-comments,
 .matching__form-extra {
   border: none;
-  width: 100%;
-  position: relative;
-
-  &::before {
-    content: "";
-    border: 2px solid @green--additionally;
-    min-width: 99px;
-    bottom: 305px;
-    right: 0;
-    position: absolute;
-  }
 }
 
 .matching__information {
@@ -276,33 +265,13 @@
   width: 100%;
   padding-left: 15px;
   border: 1px solid @gray--ligth;
-  min-height: 45px;
-  background-image: url("../img/cover.svg");
-  background-repeat: no-repeat;
-  background-position: 187px 17px;
+  height: 45px;
 
   @media (min-width: @tablet-width) {
     height: 52px;
     padding-left: 21px;
     box-sizing: border-box;
   }
-}
-
-.matching__enter--phone {
-  font-family: @deafult-font;
-  font-weight: @deafult-weight;
-  font-style: @deafult-style;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: @use-uppercase;
-  color: @gray--middle;
-  width: 100%;
-  padding-left: 15px;
-  border: 1px solid @gray--ligth;
-  min-height: 45px;
-  background-image: url("../img/phonemobile.svg");
-  background-repeat: no-repeat;
-  background-position: 174px 17px;
 }
 
 .matching__intel {

@@ -2,13 +2,30 @@
   display: flex;
   background: @green--additionally;
   align-items: center;
-  width: fit-content;
+  width: auto;
   padding: 8px 44px;
-  border-radius: 3px;
   font-family: @deafult-font;
   font-weight: @deafult-weight;
   font-style: @deafult-style;
   color: @white--basic;
   text-decoration: @none-text-decoration;
   text-transform: @use-uppercase;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 0;
+
+  @media (min-width: @tablet-width) {
+    width: fit-content;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 119px;
+    padding: 17px 27px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 44px;
+    margin-left: 0;
+  }
 }

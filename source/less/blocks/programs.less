@@ -11,8 +11,10 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
   background-color: @white--light;
   margin-bottom: 20px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
@@ -20,7 +22,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 15px;
+    padding: 38px 60px 62px 52px;
+    margin-left: 40px;
   }
 }
 
@@ -31,13 +34,14 @@
   font-size: 16px;
   line-height: 24px;
   color: @black--basic;
+  min-width: 226px;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 57%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 85%;
+    min-width: 462px;
   }
 }
 
@@ -51,16 +55,14 @@
     width: 200px;
     height: 211px;
     content: url("../img/catblacktablets.svg");
-    right: 24%;
-    position: absolute;
+    right: 80px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100px;
-    height: 106px;
+    height: 1px;
     content: url("../img/catslimdesk.svg");
-    position: absolute;
-    left: 11%;
+    position: static;
   }
 }
 
@@ -75,14 +77,14 @@
     height: 200px;
     position: absolute;
     content: url("../img/catblacktablet.svg");
-    right: 24%;
+    right: 80px;
   }
 
   @media (min-width: @desktop-width) {
     width: 134px;
-    height: 56px;
+    height: 1px;
     content: url("../img/catprodesk.svg");
-    left: 52%;
+    position: static;
   }
 }
 
@@ -96,6 +98,21 @@
   color: @black--basic;
   padding: 4px;
   text-transform: @use-uppercase;
+  margin-bottom: 22px;
+  padding-top: 19px;
+
+  @media (max-width: @mobile-width-only) {
+    border: 1px solid @gray--85;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::after {
     margin-top: 0;
@@ -117,5 +134,10 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 165px;
   }
 }

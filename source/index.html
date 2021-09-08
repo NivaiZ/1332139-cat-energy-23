@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<!-- service information(v.17) -->
+<!-- service information(v.18) -->
 
 <head>
   <meta charset="utf-8">
@@ -14,59 +14,58 @@
 <!-- header -->
 
 <body class="page-body">
-  <header class="page-header container">
+  <header class="page-header page-header--index">
     <div class="page-header__content">
       <div class="page-header__link">
         <a class="page-header__logo">
           <img src="img/headermobile.svg" width="191" height="37" alt="Логотип сайта Кэт энерджи">
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="main-nav__nolink">
+            <a class="main-nav__nolink main-nav__nolink--index">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--index" href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
       </nav>
     </div>
-  </header>
 
-  <!-- main -->
-
-  <main class="page-main">
     <section class="intro container">
-      <div class="intro__container">
-        <div class="intro__content">
+      <div class="intro__content">
+        <div class="intro__container">
           <h1 class="intro__heading">Функциональное питание для котов</h1>
           <p class="intro__text">Занялся собой? Займись котом!</p>
-          <img class="intro__img intro__img--mobile" src="img/indexcanmobile1.png" width="280" height="270"
-            alt="Изображение cat energy со вкусом курицы">
-          <img class="intro__img intro__img--tablet" src="/img/indexcantablet.png" width="709" height="609"
-            alt="Изображение cat energy со вкусом курицы. Версия для планшета">
-          <img class="intro__img intro__img--desktop" src="/img/indexcandesktop.png" width="550" height="499"
-            alt="Изображение cat energy со вкусом курицы. Версия для компьютера">
-          <a class="intro__link main-button" href="form.html">
-            Подобрать программу
-          </a>
         </div>
+        <img class="intro__img intro__img--mobile" src="img/indexcanmobile1.png" width="280" height="270"
+          alt="Изображение cat energy со вкусом курицы">
+        <img class="intro__img--tablet" src="/img/indexcantablet.png" width="709" height="609"
+          alt="Изображение cat energy со вкусом курицы. Версия для планшета">
+        <img class="intro__img--desktop" src="/img/indexcandesktop.png" width="550" height="499"
+          alt="Изображение cat energy со вкусом курицы. Версия для компьютера">
+        <a class="intro__link main-button" href="form.html">
+          Подобрать программу
+        </a>
       </div>
     </section>
 
+  </header>
+
+  <main class="page-main">
     <section class="programs container">
       <h2 class="visually-hidden">Представленные программы питания</h2>
       <div class="programs__item programs__item--slim">
@@ -86,7 +85,7 @@
     <section class="argument">
       <div class="argument__container container">
         <h2 class="argument__heading">Как это работает</h2>
-        <ul class="argument__list">
+        <ol class="argument__list">
           <li class="argument__list-item argument__list-item--healf">Функциональное питание содержит только полезные
             питательные вещества.</li>
           <li class="argument__list-item argument__list-item--form">Выпускается в виде порошка, который нужно лишь
@@ -95,7 +94,7 @@
             функциональное питание.</li>
           <li class="argument__list-item argument__list-item--result">Уже через месяц наслаждайтесь изменениями к
             лучшему вашего питомца!</li>
-        </ul>
+        </ol>
       </div>
     </section>
 
@@ -112,9 +111,12 @@
           </div>
           <div class="example__stats">
             <p class="example__number">60 ДНЕЙ</p>
-            <p class="example__text-small">затрачено времени</p>
+            <p class="example__text-small example__text-small--extra">затрачено времени</p>
           </div>
-          <p class="example__total">Затраты на питание: 15 000 РУБ. </p>
+          <p class="example__total">
+            <span class="example__total">Затраты на питание:</span>
+            <span class="example__start">15 000 РУБ.</span>
+          </p>
         </div>
       </div>
       <div class="example__item">
@@ -122,16 +124,19 @@
         <input class="example__after visually-hidden" type="radio" id="example__after" name="input__after">
         <div class="example__slider">
           <picture>
-            <img class="example__img example__slider--before" src="img/beforemobile.png" width="311" height="232"
-              alt="Изображение пухлого кота до принятия cat energy">
-            <!-- <img class="example__img example__slider--arfer" src="img/aftermobile.png" width="251" height="240"
-            alt="Изображение худого кота после принятия cat energy"> -->
+            <img class="example__img--mobile" src="img/beforemobile.png" width="311" height="232"
+              alt="Изображение худого и пухлого кота после принятия cat energy">
+            <img class="example__img--tablet" src="img/catchoisebg.png" width="708" height="620"
+              alt="Изображение худого и пухлого кота после принятия cat energy">
+              <img class="example__img--desktop" src="img/catchoisedesktop.png" width="690" height="656"
+              alt="Изображение худого и пухлого кота после принятия cat energy">
+
           </picture>
         </div>
         <div class="example__controls controls">
           <label class="controls__before" for="example__before">Было</label>
           <div class="example__scale scale">
-            <button class="scale__button" type="button">До/После</button>
+            <button class="scale__button" type="button"></button>
           </div>
           <label class="controls__after" for="example__after">Стало</label>
         </div>
@@ -145,7 +150,7 @@
     <section class="page-footer__contacts contacts container">
       <div class="contacts__site">
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
     </section>
     <div class="page-footer__map map">
@@ -212,6 +217,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

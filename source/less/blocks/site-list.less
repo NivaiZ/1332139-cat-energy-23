@@ -5,8 +5,23 @@
   font-size: 36px;
   line-height: 36px;
   color: @black--basic;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 34px;
+  }
 }
 
 .site-list__item {
-  margin-left: -10px;
+  margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-right: 34px;
+  }
+}
+
+.site-list__item:last-child {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 20px;
+  }
 }

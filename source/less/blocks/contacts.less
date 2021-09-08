@@ -1,13 +1,13 @@
 .contacts {
-  background-color: @white--light;
+  background-color: @white--basic;
 
   @media (min-width: @tablet-width) {
+    background-color: @white--basic;
     max-width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @white--basic;
-    margin-top: 25px;
   }
 }
 
@@ -23,11 +23,11 @@
 
   @media (min-width: @desktop-width) {
     background-color: @white--basic;
-    position: relative;
-    top: 270px;
-    left: 0;
-    width: 35%;
+    position: absolute;
+    max-width: 570px;
     column-gap: 87px;
+    transform: translateY(140px);
+    padding: 47px 13px 51px 24px;
   }
 }
 
@@ -43,6 +43,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 163px;
+    margin-left: 76px;
   }
 }
 

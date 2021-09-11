@@ -12,7 +12,16 @@
 }
 
 .site-list__item {
-  margin-bottom: 42px;
+  @media (max-width: @mobile-width-only) {
+    text-transform: uppercase;
+    border: 1px solid @gray--bright;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16px;
+    padding-top: 29px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -22,6 +31,12 @@
 
 .site-list__item:last-child {
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+  }
+}
+
+.site-list__item:first-child {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 17px;
   }
 }

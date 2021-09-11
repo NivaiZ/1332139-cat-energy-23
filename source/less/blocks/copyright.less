@@ -8,8 +8,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
   margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
 }

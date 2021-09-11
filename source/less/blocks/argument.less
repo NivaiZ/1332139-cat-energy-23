@@ -1,35 +1,103 @@
+.argument {
+  @media (min-width: @tablet-width) {
+    border: 1px solid @gray--bright;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    padding-bottom: 69px;
+  }
+}
+
 .argument__heading {
   font-family: @deafult-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: @deafult-weight;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .argument__list {
+  display: grid;
+  grid-template-columns: 2fr;
+  row-gap: 20px;
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 42px;
+  counter-reset: list 0;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 689px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    min-height: initial;
+  }
 }
 
 .argument__list-item {
+  display: flex;
+  flex-direction: row;
   font-family: @extra-font;
   font-weight: @deafult-weight;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
-  flex-direction: row;
-  color: @gray--middle;
-  margin-bottom: 20px;
+
+  &::before {
+    margin-right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 24px;
+    width: 70%;
+
+    &::after {
+      display: flex;
+      flex-direction: column;
+      z-index: -2;
+      font-family: @deafult-font;
+      font-weight: @deafult-weight;
+      font-size: 280px;
+      line-height: 280px;
+      width: 112px;
+      height: 280px;
+      text-align: center;
+      color: @white--light;
+      position: absolute;
+      counter-increment: list;
+      content: counter(list);
+      margin-left: 110px;
+      margin-top: -40px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 81%;
+    margin-bottom: 31px;
+  }
 }
 
-.argument__list-item::before {
-  margin-right: 20px;
-}
-
-.argument__list-item--healf::before {
-  width: 60px;
-  height: 60px;
-  content: url("../img/healficon.svg");
+.argument__list-item--healf {
+  &::before {
+    width: 60px;
+    height: 60px;
+    content: url("../img/healficon.svg");
+  }
 }
 
 .argument__list-item--form::before {

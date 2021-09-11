@@ -1,11 +1,30 @@
-.programs__item {
+.programs {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  padding-top: 24px;
-  padding-right: 20px;
-  padding-left: 20px;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.programs__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
   background-color: @white--light;
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+    padding: 77px 60px 62px 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 38px 60px 62px 52px;
+    margin-left: 40px;
+  }
 }
 
 .programs__text {
@@ -15,6 +34,15 @@
   font-size: 16px;
   line-height: 24px;
   color: @black--basic;
+  min-width: 226px;
+
+  @media (min-width: @tablet-width) {
+    width: 57%;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 462px;
+  }
 }
 
 .programs__item--slim::before {
@@ -22,6 +50,20 @@
   height: 53px;
   position: absolute;
   content: url("../img/catbackslim.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    content: url("../img/catblacktablets.svg");
+    right: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 1px;
+    content: url("../img/catslimdesk.svg");
+    position: static;
+  }
 }
 
 .programs__item--pro::before {
@@ -29,6 +71,21 @@
   height: 50px;
   position: absolute;
   content: url("../img/catbackpro.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    position: absolute;
+    content: url("../img/catblacktablet.svg");
+    right: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 1px;
+    content: url("../img/catprodesk.svg");
+    position: static;
+  }
 }
 
 .programs__link {
@@ -41,6 +98,21 @@
   color: @black--basic;
   padding: 4px;
   text-transform: @use-uppercase;
+  margin-bottom: 22px;
+  padding-top: 19px;
+
+  @media (max-width: @mobile-width-only) {
+    border: 1px solid @gray--85;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::after {
     margin-top: 0;
@@ -58,4 +130,14 @@
   font-size: 24px;
   font-weight: @deafult-weight;
   line-height: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 165px;
+  }
 }

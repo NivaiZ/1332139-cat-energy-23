@@ -1,7 +1,25 @@
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   padding: 5px 5px;
+
+  @media (min-width: @tablet-width) {
+    justify-items: center;
+    min-height: 430px;
+    background-color: @white--light;
+    margin-bottom: 60px;
+  }
+}
+
+.catalog__other {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    background-color: @white--basic;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid @white--light;
+    justify-content: center;
+  }
 }
 
 .catalog__heading {
@@ -10,6 +28,42 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: @use-uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 68%;
+  }
+}
+
+.catalog__wrapper {
+  grid-column-start: 2;
+  grid-column-end: -1;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @gray--ligth;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .catalog__text {
@@ -17,10 +71,74 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 87px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 65%;
+  }
 }
 
 .catalog__show {
   margin-top: auto;
   background-color: @white--light;
   color: @gray--middle;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 87px;
+  }
+}
+
+.catalog__extra {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @desktop-width) {
+    justify-items: center;
+  }
+}
+
+.catalog__heading--extra {
+  border-top: 1px solid @light;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.catalog__link {
+  text-decoration: none;
+  color: @gray--13;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 1px;
+  }
+}
+
+.catalog__order {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  @media (min-width: @tablet-width) {
+    width: 65%;
+    height: 24%;
+  }
+}
+
+.catalog__description,
+.catalog__parameter {
+  font-family: @extra-font;
+  font-weight: @deafult-weight;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

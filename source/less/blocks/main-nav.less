@@ -6,17 +6,6 @@
   text-decoration: none;
   color: @black--basic;
 
-  @media (max-width: @mobile-width-only) {
-    &::before {
-      content: "";
-      position: absolute;
-      border: 1px solid @gray--bright;
-      width: 100%;
-      top: 125px;
-      left: 0;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -33,34 +22,11 @@
   line-height: 20px;
   text-decoration: none;
 
-  @media (max-width: @mobile-width-only) {
-    &::before {
-      content: "";
-      position: absolute;
-      border: 1px solid @gray--bright;
-      width: 100%;
-      top: 56px;
-      left: 0;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      border: 1px solid @gray--bright;
-      width: 100%;
-      top: 9px;
-      left: 0;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
     font-weight: @deafult-weight;
     text-transform: @use-uppercase;
-  }
-
-  @media (min-width: @desktop-width) {
     border-bottom: 2px solid @green--additionally;
     padding-bottom: 10px;
   }
@@ -88,12 +54,12 @@
   list-style: none;
   flex-wrap: nowrap;
   align-items: center;
+  text-transform: @use-uppercase;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin-bottom: 7px;
   }
 
   @media (min-width: @desktop-width) {
@@ -124,23 +90,27 @@
 
 .main-nav--closed {
   @media (max-width: @mobile-width-only) {
-    &::after,
-    &::before {
+    &::after {
       content: "";
       position: absolute;
-      top: 20px;
-      right: 5px;
+      top: 31px;
+      right: 0;
       width: 24px;
       height: 2px;
       background-color: @black--basic;
       margin-right: 20px;
-    }
-
-    &::after {
       transform: matrix(0.71, -0.75, 0.67, 0.71, 0, 0);
     }
 
     &::before {
+      content: "";
+      position: absolute;
+      top: 31px;
+      right: 0;
+      width: 24px;
+      height: 2px;
+      background-color: @black--basic;
+      margin-right: 20px;
       transform: matrix(0.71, 0.75, -0.67, 0.71, 0, 0);
     }
   }
@@ -150,8 +120,8 @@
   @media (max-width: @mobile-width-only) {
     content: "";
     position: absolute;
-    top: 13px;
-    right: 5px;
+    top: 21px;
+    right: 0;
     width: 24px;
     height: 2px;
     background-color: @black--basic;
@@ -159,7 +129,6 @@
     margin-right: 20px;
   }
 }
-
 
 @media (max-width: @mobile-width-only) {
   .main-nav--opened .main-nav__toggle {
@@ -182,7 +151,9 @@
     position: absolute;
     background-color: @white--basic;
     min-width: 100%;
-    top: 24px;
+    padding: 0;
+    padding-top: 23px;
+    top: 35px;
     left: 0;
   }
 

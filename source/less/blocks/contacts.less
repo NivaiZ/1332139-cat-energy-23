@@ -4,30 +4,34 @@
   @media (min-width: @tablet-width) {
     background-color: @white--basic;
     max-width: 100%;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @white--basic;
+    margin-bottom: 0;
   }
 }
 
 .contacts__site {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 27px 0;
+  padding: 11px 0;
   column-gap: 1px;
 
   @media (min-width: @tablet-width) {
     column-gap: 275px;
+    padding: initial;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @white--basic;
     position: absolute;
-    max-width: 570px;
-    column-gap: 87px;
-    transform: translateY(140px);
-    padding: 47px 13px 51px 24px;
+    top: 98px;
+    padding-bottom: 47px;
+    padding-left: 68px;
+    column-gap: 0;
+    justify-items: start;
   }
 }
 
@@ -43,11 +47,15 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 21px;
+    margin-left: 41px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 163px;
-    margin-left: 76px;
+    min-width: initial;
+    padding-left: 9px;
+    padding-top: 40px;
+    max-width: 168px;
+    margin-left: 0;
   }
 }
 
@@ -63,10 +71,48 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    max-width: 75%;
+    width: 82%;
+    margin-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 60%;
+    max-width: 170px;
+    margin-left: 0;
+    padding-top: 0;
+    margin-top: 56px;
+    margin-right: 81px;
+  }
+}
+
+.contacts__adress br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.contacts__adress--wrapper {
+  @media (min-width: @tablet-width) {
+    margin-left: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.contacts__adress--clarification {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: 30px;
+    margin-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+    margin-top: 14px;
   }
 }

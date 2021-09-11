@@ -12,16 +12,18 @@
 }
 
 .site-list__item {
-  margin-bottom: 42px;
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 27px;
+    padding-top: 15px;
+    border: 1px solid @gray--bright;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-    margin-right: 34px;
-  }
-}
-
-.site-list__item:last-child {
-  @media (max-width: @mobile-width-only) {
-    margin-bottom: 20px;
+    margin-right: 33px;
   }
 }

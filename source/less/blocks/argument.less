@@ -4,11 +4,14 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    padding: 0;
+    margin-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
     border: none;
-    padding-bottom: 69px;
+    padding-bottom: 36px;
+    margin-top: 69px;
   }
 }
 
@@ -17,6 +20,7 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: @deafult-weight;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -27,12 +31,16 @@
 .argument__list {
   display: grid;
   grid-template-columns: 2fr;
-  row-gap: 20px;
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 42px;
   counter-reset: list 0;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 42px;
+    padding-top: 43px;
+    row-gap: 18px;
+  }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -55,7 +63,13 @@
   line-height: 18px;
 
   &::before {
-    margin-right: 20px;
+    @media (max-width: @mobile-width-only) {
+      margin-right: 25px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -63,6 +77,8 @@
     font-size: 16px;
     line-height: 24px;
     width: 70%;
+    margin-top: 93px;
+    margin-left: 14px;
 
     &::after {
       display: flex;
@@ -79,8 +95,6 @@
       position: absolute;
       counter-increment: list;
       content: counter(list);
-      margin-left: 110px;
-      margin-top: -40px;
     }
   }
 
@@ -88,7 +102,14 @@
     font-size: 16px;
     line-height: 24px;
     width: 81%;
-    margin-bottom: 31px;
+    margin-bottom: 83px;
+    position: relative;
+  }
+}
+
+.argument__list-item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-left: 58px;
   }
 }
 
@@ -98,22 +119,89 @@
     height: 60px;
     content: url("../img/healficon.svg");
   }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      counter-increment: list;
+      content: counter(list);
+      top: 54px;
+      left: 117px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -36px;
+      left: 104px;
+    }
+  }
 }
 
-.argument__list-item--form::before {
-  width: 60px;
-  height: 60px;
-  content: url("../img/formicon.svg");
+
+.argument__list-item--form {
+  &::before {
+    width: 60px;
+    height: 60px;
+    content: url("../img/formicon.svg");
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      counter-increment: list;
+      content: counter(list);
+      top: 43px;
+      right: 104px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -35px;
+      left: 117px;
+    }
+  }
 }
 
-.argument__list-item--replacing::before {
-  width: 60px;
-  height: 60px;
-  content: url("../img/replacingicon.svg");
+.argument__list-item--replacing {
+  &::before {
+    width: 60px;
+    height: 60px;
+    content: url("../img/replacingicon.svg");
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      counter-increment: list;
+      content: counter(list);
+      bottom: 36px;
+      left: 112px;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: -84px;
+      left: 140px;
+    }
+  }
 }
 
-.argument__list-item--result::before {
-  width: 60px;
-  height: 60px;
-  content: url("../img/resulticon.svg");
+.argument__list-item--result {
+  &::before {
+    width: 60px;
+    height: 60px;
+    content: url("../img/resulticon.svg");
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      counter-increment: list;
+      content: counter(list);
+      bottom: 48px;
+      right: 100px;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: -53px;
+      right: 20px;
+    }
+  }
 }

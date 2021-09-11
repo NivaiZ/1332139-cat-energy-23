@@ -5,6 +5,15 @@
   font-size: 36px;
   line-height: 36px;
 
+  @media (max-width: @mobile-width-only) {
+    padding-top: 27px;
+    padding-bottom: 41px;
+    margin-bottom: 0;
+    border: 1px solid @light;
+    border-left: none;
+    border-right: none;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -15,6 +24,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
 
   @media (min-width: @tablet-width) {
     display: grid;

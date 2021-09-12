@@ -5,6 +5,11 @@
   line-height: 24px;
   text-align: center;
 
+  @media (max-width: @mobile-width-only) {
+    margin-left: 20px;
+    text-align: initial;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 36px;
     line-height: 36px;
@@ -24,6 +29,10 @@
   padding: 13px 1px 1px 1px;
   margin: 1px;
 
+  @media (max-width: @mobile-width-only) {
+    padding: 2px 1px 11px 1px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -31,14 +40,18 @@
   }
 }
 
+.extra__inner {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 35px;
+  }
+}
 
 .extra__link {
-  margin-top: 11px;
   text-decoration: none;
 }
 
 .extra__list {
-  padding-left: 1px;
+  padding-left: 0px;
   list-style: none;
 
   @media (min-width: @tablet-width) {
@@ -55,6 +68,14 @@
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid @gray--ligth;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 11px 0 18px;
+    margin: 0 20px 0 20px;
+  }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -67,8 +88,16 @@
 
 .extra__table {
   font-family: @extra-font;
+  font-style: @deafult-style;
+  font-weight: @deafult-weight;
+  font-size: 14px;
+  line-height: 14px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 0;
+  }
 
   @media (min-width: @tablet-width) {
     align-content: stretch;

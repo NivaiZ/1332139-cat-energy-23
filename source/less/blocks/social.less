@@ -3,7 +3,12 @@
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  margin-left: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 0;
+    margin-left: 20px;
+    padding: 0;
+  }
 
   @media (min-width: @tablet-width) {
     margin-left: auto;
@@ -19,4 +24,11 @@
   width: 50px;
   height: 50px;
   align-items: center;
+}
+
+.social__item {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 0;
+    padding-right: 0;
+  }
 }

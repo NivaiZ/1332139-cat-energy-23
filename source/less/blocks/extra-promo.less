@@ -1,9 +1,12 @@
 .extra-promo {
-  width: 100%;
   height: 289px;
   background-image: url("../img/giftphoto.jpg");
   background-repeat: no-repeat;
   background-color: @green--85;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 38px 20px 19px 20px;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/catgifttablet.png");

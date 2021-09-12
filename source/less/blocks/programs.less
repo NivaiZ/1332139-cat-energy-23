@@ -4,6 +4,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    padding-top: 14px;
   }
 }
 
@@ -13,17 +14,19 @@
   flex-direction: column;
   position: relative;
   background-color: @white--light;
-  margin-bottom: 20px;
   padding-left: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
-    padding: 77px 60px 62px 52px;
+    margin-bottom: 30px;
+    padding: 93px 56px 25px 49px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 38px 60px 62px 52px;
-    margin-left: 40px;
+    padding: 39px 28px 42px 50px;
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 
@@ -31,62 +34,96 @@
   font-family: @extra-font;
   font-style: @deafult-style;
   font-weight: @deafult-weight;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   color: @black--basic;
-  min-width: 226px;
+  margin: 0;
+  padding-right: 30px;
+  padding-left: 0;
 
   @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
     width: 57%;
+    margin-bottom: 41px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 462px;
+    margin-top: 54px;
+    margin-bottom: 21px;
   }
 }
 
 .programs__item--slim::before {
-  width: 50px;
-  height: 53px;
-  position: absolute;
-  content: url("../img/catbackslim.svg");
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    content: url("../img/catbackslim.svg");
+    top: 21px;
+  }
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 60px;
+    top: 98px;
     width: 200px;
     height: 211px;
     content: url("../img/catblacktablets.svg");
-    right: 80px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100px;
-    height: 1px;
-    content: url("../img/catslimdesk.svg");
-    position: static;
-  }
-}
-
-.programs__item--pro::before {
-  width: 67px;
-  height: 50px;
-  position: absolute;
-  content: url("../img/catbackpro.svg");
-
-  @media (min-width: @tablet-width) {
-    width: 268px;
-    height: 200px;
     position: absolute;
-    content: url("../img/catblacktablet.svg");
-    right: 80px;
+    width: 100px;
+    height: 106px;
+    content: url("../img/catslimdesk.svg");
+    left: 52px;
+    top: 39px;
+  }
+}
+
+.programs__item--pro {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 93px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 134px;
-    height: 1px;
-    content: url("../img/catprodesk.svg");
-    position: static;
+    padding-top: 49px;
+    margin: initial;
+  }
+
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      width: 67px;
+      height: 50px;
+      top: 24px;
+      left: 13px;
+      position: absolute;
+      content: url("../img/catbackpro.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 268px;
+      height: 200px;
+      position: absolute;
+      content: url("../img/catblacktablet.svg");
+      right: 26px;
+      top: 109px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 134px;
+      height: 100px;
+      content: url("../img/catprodesk.svg");
+      position: absolute;
+      left: 33px;
+      top: 45px;
+    }
   }
 }
+
 
 .programs__link {
   font-family: @deafult-font;
@@ -96,29 +133,31 @@
   line-height: 16px;
   text-decoration: none;
   color: @black--basic;
-  padding: 4px;
   text-transform: @use-uppercase;
-  margin-bottom: 22px;
-  padding-top: 19px;
 
   @media (max-width: @mobile-width-only) {
     border: 1px solid @gray--85;
     border-left: none;
     border-right: none;
     border-bottom: none;
-    margin-right: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 19px;
   }
 
   &::after {
-    margin-top: 0;
-    margin-left: 15px;
+    left: 119px;
     position: absolute;
     content: url("../img/icon.svg");
+
+    @media (min-width: @tablet-width) {
+      left: 178px;
+    }
   }
 }
 
@@ -126,7 +165,9 @@
   font-family: @deafult-font;
   font-style: @deafult-style;
   text-transform: @use-uppercase;
-  margin-left: 70px;
+  margin-left: 69px;
+  margin-bottom: 32px;
+  padding-top: 8px;
   font-size: 24px;
   font-weight: @deafult-weight;
   line-height: 38px;
@@ -134,10 +175,23 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 1px;
+    margin: 0;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 165px;
+  }
+}
+
+.programs__heading--wrapper {
+  @media (min-width: @desktop-width) {
+    margin-top: 29px;
+  }
+}
+
+.programs__heading--clarification {
+  @media (min-width: @desktop-width) {
+    margin-top: 19px;
   }
 }

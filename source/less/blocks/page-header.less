@@ -2,22 +2,21 @@
   @media (max-width: @mobile-width-only) {
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.page-header__link {
-  @media (min-width: @desktop-width) {
-    padding-left: 110px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid @light;
+    border-left: none;
+    border-right: none;
+    border-top: none;
   }
 }
 
 .page-header--index {
   @media (min-width: @desktop-width) {
     background-image: url("../img/indexbgdesk.jpg"), linear-gradient(90deg, @white--basic 50%, @green--50 50%);
-    background-position: 99% 0%;
+    background-position: 100% 0%;
     background-repeat: no-repeat;
-    margin-bottom: 85px;
-    position: relative;
+    margin-bottom: 68px;
   }
 }
 
@@ -34,13 +33,32 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-end;
+    margin-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding-top: 50px;
+    justify-items: end;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1220px;
+  }
+}
+
+.page-header__link {
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
@@ -51,5 +69,17 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.page-header__logo--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo--tablet {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }

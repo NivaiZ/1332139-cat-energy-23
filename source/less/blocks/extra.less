@@ -40,18 +40,12 @@
   }
 }
 
-.extra__inner {
-  @media (max-width: @mobile-width-only) {
-    margin-top: 35px;
-  }
-}
-
 .extra__link {
   text-decoration: none;
 }
 
 .extra__list {
-  padding-left: 0px;
+  padding-left: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
@@ -130,6 +124,10 @@
 }
 
 .extra__inner {
+  @media (max-width: @mobile-width-only) {
+    margin-top: 35px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;

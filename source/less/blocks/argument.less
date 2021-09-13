@@ -5,13 +5,12 @@
     border-left: none;
     border-right: none;
     padding: 0;
-    margin-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
     border: none;
     padding-bottom: 36px;
-    margin-top: 69px;
+    margin-top: 30px;
   }
 }
 
@@ -45,7 +44,7 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     position: relative;
-    min-height: 689px;
+    min-height: 676px;
   }
 
   @media (min-width: @desktop-width) {
@@ -65,10 +64,6 @@
   &::before {
     @media (max-width: @mobile-width-only) {
       margin-right: 25px;
-    }
-
-    @media (min-width: @tablet-width) {
-      margin-bottom: 30px;
     }
   }
 
@@ -96,112 +91,246 @@
       counter-increment: list;
       content: counter(list);
     }
+
+    &:first-child {
+      padding-bottom: 59px;
+      padding-top: 91px;
+      margin-left: 0;
+    }
+
+    &:nth-child(2) {
+      @media (min-width: @tablet-width) {
+        margin-top: 189px;
+        margin-left: 29px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin-top: 94px;
+        margin-left: 19px;
+      }
+    }
+
+    &:nth-child(3) {
+      @media (min-width: @tablet-width) {
+        margin-left: 0;
+        margin-top: 93px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin-left: 40px;
+        margin-top: 91px;
+      }
+    }
+
+    &:nth-child(4) {
+      margin-left: 29px;
+      margin-top: 93px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     font-size: 16px;
     line-height: 24px;
     width: 81%;
-    margin-bottom: 83px;
+    margin-top: 96px;
+    padding-top: 94px;
+    padding-bottom: 75px;
     position: relative;
+
+    &:last-child {
+      margin-left: 58px;
+    }
   }
 }
 
-.argument__list-item:last-child {
-  @media (min-width: @desktop-width) {
-    margin-left: 58px;
+.argument__list-item br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
 .argument__list-item--healf {
-  &::before {
-    width: 60px;
-    height: 60px;
-    content: url("../img/healficon.svg");
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      width: 60px;
+      height: 60px;
+      content: url("../img/healficon.svg");
+    }
   }
 
-  &::after {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    &::after {
       position: absolute;
       counter-increment: list;
       content: counter(list);
-      top: 54px;
-      left: 117px;
+      top: 32px;
+      left: 118px;
     }
 
-    @media (min-width: @desktop-width) {
-      top: -36px;
-      left: 104px;
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/helficontablet.svg");
+      top: 72px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      position: absolute;
+      top: -63px;
+      left: 118px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/helficontablet.svg");
+      top: -23px;
+      left: 0;
     }
   }
 }
 
-
 .argument__list-item--form {
-  &::before {
-    width: 60px;
-    height: 60px;
-    content: url("../img/formicon.svg");
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      width: 60px;
+      height: 60px;
+      content: url("../img/formicon.svg");
+    }
   }
 
-  &::after {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    &::after {
       position: absolute;
       counter-increment: list;
       content: counter(list);
-      top: 43px;
-      right: 104px;
+      top: 32px;
+      right: 101px;
     }
 
-    @media (min-width: @desktop-width) {
-      top: -35px;
-      left: 117px;
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/formiciontablet.svg");
+      top: 72px;
+      right: 244px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      position: absolute;
+      top: -62px;
+      left: 113px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/formiciontablet.svg");
+      top: -21px;
+      left: 0;
     }
   }
 }
 
 .argument__list-item--replacing {
-  &::before {
-    width: 60px;
-    height: 60px;
-    content: url("../img/replacingicon.svg");
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      width: 60px;
+      height: 60px;
+      content: url("../img/replacingicon.svg");
+    }
   }
 
-  &::after {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    &::after {
       position: absolute;
       counter-increment: list;
       content: counter(list);
-      bottom: 36px;
-      left: 112px;
+      bottom: 47px;
+      left: 113px;
     }
 
-    @media (min-width: @desktop-width) {
-      bottom: -84px;
-      left: 140px;
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/replecingicontablet.svg");
+      bottom: 207px;
+      left: 0;
+    }
+  }
+
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      position: absolute;
+      top: -56px;
+      left: 113px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/replecingicontablet.svg");
+      top: -18px;
+      left: 0;
     }
   }
 }
 
 .argument__list-item--result {
-  &::before {
-    width: 60px;
-    height: 60px;
-    content: url("../img/resulticon.svg");
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      width: 60px;
+      height: 60px;
+      content: url("../img/resulticon.svg");
+    }
   }
 
-  &::after {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    &::after {
       position: absolute;
       counter-increment: list;
       content: counter(list);
-      bottom: 48px;
-      right: 100px;
+      bottom: 45px;
+      right: 99px;
     }
 
-    @media (min-width: @desktop-width) {
-      bottom: -53px;
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/resulticontablet.svg");
+      bottom: 207px;
+      right: 244px;
+    }
+  }
+
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      position: absolute;
+      top: -53px;
       right: 20px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      content: url("../img/resulticontablet.svg");
+      top: -19px;
+      left: 2px;
     }
   }
 }

@@ -1,9 +1,25 @@
+.extra {
+  position: relative;
+}
+
 .extra__heading {
   font-family: @deafult-font;
   font-weight: @deafult-weight;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  background-color: @white--basic;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 2px solid @green--additionally;
+    min-width: 100%;
+    top: 38px;
+    right: 0;
+    z-index: -2;
+  }
 
   @media (max-width: @mobile-width-only) {
     margin-left: 20px;
@@ -14,6 +30,16 @@
     font-size: 36px;
     line-height: 36px;
     text-align: unset;
+    margin-top: 23px;
+    margin-left: 60px;
+  }
+}
+
+.extra__heading--product {
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-right: 45px;
+    padding-left: 50px;
   }
 }
 
@@ -53,9 +79,7 @@
     grid-template-columns: 1fr;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 73%;
-  }
+  @media (min-width: @desktop-width) {}
 }
 
 .extra__item {
@@ -76,7 +100,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 325px 325px 245px;
+    border-bottom: 1px solid @gray--ligth;
+    align-items: center;
   }
 }
 
@@ -119,7 +145,8 @@
   @media (min-width: @desktop-width) {
     grid-column-start: unset;
     grid-column-end: unset;
-    margin-bottom: 32px;
+    margin-bottom: 21px;
+    margin-top: 11px;
   }
 }
 
@@ -131,6 +158,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 86px;
+    margin-bottom: 61px;
+    padding-top: 28px;
   }
 }

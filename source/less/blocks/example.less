@@ -90,7 +90,14 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    margin-top: 13px;
+    display: block;
+    margin-top: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+    margin-bottom: 0;
+    display: initial;
   }
 }
 
@@ -110,7 +117,7 @@
   }
 }
 
-.example__second {
+.example__stats--second {
   @media (min-width: @desktop-width) {
     margin-left: -39px;
   }
@@ -234,19 +241,6 @@
     grid-column-end: 3;
     margin-left: 0;
     margin-right: 0;
-  }
-}
-
-.example__text--number {
-  @media (min-width: @tablet-width) {
-    display: block;
-    margin-top: 12px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 60px;
-    margin-bottom: 0;
-    display: initial;
   }
 }
 

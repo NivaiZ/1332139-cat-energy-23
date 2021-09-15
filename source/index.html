@@ -21,7 +21,7 @@
           <picture>
             <source media="(min-width: 768px)" srcset="img/logotablet.svg">
             <source media="(min-width: 1440px)" srcset="img/logodesktop.svg">
-            <img class="page-header__logo" src="img/headermobile.svg">
+            <img class="page-header__logo" src="img/headermobile.svg" alt="Логотип магазина">
           </picture>
         </a>
       </div>
@@ -55,14 +55,14 @@
           <h1 class="intro__heading">Функциональное питание для котов</h1>
           <p class="intro__text">Занялся собой? Займись котом!</p>
         </div>
-        <img class="intro__img intro__img--mobile" src="img/indexcanmobile1.png" width="280" height="270"
-          alt="Изображение cat energy со вкусом курицы">
-        <img class="intro__img--tablet" src="img/indexcantablet.png" width="709" height="609"
-          alt="Изображение cat energy со вкусом курицы. Версия для планшета">
-        <img class="intro__img--desktop" src="img/indexcandesktop.png" width="550" height="499"
-          alt="Изображение cat energy со вкусом курицы. Версия для компьютера">
-        <a class="intro__link main-button" href="form.html">
-          Подобрать программу
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/indexcantablet.png, img/indexcantablet@2x.png 2x">
+          <source media="(min-width: 1440px)" srcset="img/indexcanpc.png, img/indexcanpc@2x.png 2x">
+          <img src="img/indexcanmob.png" srcset="img/indexcanmob@2x.png 2x"
+            alt="Спортивный корм для кошек Cat Energy Pro">
+          </picture>
+          <a class="intro__link main-button" href="form.html">
+        Подобрать программу
         </a>
       </div>
     </section>
@@ -113,26 +113,32 @@
             <p class="example__number">5 КГ</p>
             <p class="example__text-small">снижение веса</p>
           </div>
-          <div class="example__stats example__second">
+          <div class="example__stats example__stats--second">
             <p class="example__number">60 ДНЕЙ</p>
             <p class="example__text-small example__text-small--extra">затрачено времени</p>
           </div>
           <p class="example__total">
-            <span class="example__text--spending">Затраты на питание:</span>
-            <span class="example__text--number">15 000 РУБ.</span>
+            <span class="example__spending">Затраты на питание:</span>
+            <span class="example__number">15 000 РУБ.</span>
           </p>
         </div>
         <div class="example__item">
           <input class="example__before visually-hidden" type="radio" id="example__before" name="input__before">
           <input class="example__after visually-hidden" type="radio" id="example__after" name="input__after">
-          <div class="example__slider">
+          <div class="example__slider example__slider--before">
             <picture>
-              <img class="example__img--mobile" src="img/beforemobile.png" width="311" height="232"
-                alt="Изображение худого и пухлого кота после принятия cat energy">
-              <img class="example__img--tablet" src="img/catchoisebg.png" width="708" height="620"
-                alt="Изображение худого и пухлого кота после принятия cat energy">
-              <img class="example__img--desktop" src="img/catchoisedesktop.png" width="690" height="656"
-                alt="Изображение худого и пухлого кота после принятия cat energy">
+              <source media="(min-width: 768px)" srcset="img/beforetablet.png, img/beforetablet@2x.png 2x">
+              <source media="(min-width: 1440px)" srcset="img/beforepc.png, img/beforepc@2x.png 2x">
+              <img src="img/beforemob.png" srcset="img/beforemob@2x.png 2x"
+                alt="Изображение пухлого кота до принятия Cat Energy">
+            </picture>
+          </div>
+          <div class="example__slider example__slider--after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/aftertablet.png, aftertablet@2x.png 2x">
+              <source media="(min-width: 1440px)" srcset="img/afterpc.png, img/afterpc@2x.png 2x">
+              <img src="img/aftermob.png" srcset="img/aftermob@2x.png 2x"
+                alt="Изображение стройного кота после принятия Cat Energy">
             </picture>
           </div>
           <div class="example__controls controls">
@@ -175,25 +181,27 @@
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/iconvktablet.svg">
-                  <img src="img/iconvk.svg">
+                  <img src="img/iconvk.svg" alt="Логотип контакта">
                 </picture>
                 <span class="visually-hidden">Vkontakte</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/" target="_blank">
-            <picture>
-              <source media="(min-width: 768px") srcset="img/iconinsttablet.svg">
-              <img src="img/iconinst.svg">
-            </picture>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/"
+                target="_blank">
+                <picture>
+                  <source media="(min-width: 768px)"  srcset="img/iconinsttablet.svg">
+                  <img src="img/iconinst.svg" alt="Логотип инстограмма">
+                </picture>
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+                target="_blank">
                 <picture>
-                  <source media="(min-width: 768px") srcset="img/iconfbtablet.svg">
-                  <img src="img/iconfacebook.svg">
+                  <source media="(min-width: 768px)" srcset="img/iconfbtablet.svg">
+                  <img src="img/iconfacebook.svg" alt="Логотип facebook">
                 </picture>
                 <span class="visually-hidden">Facebook</span>
               </a>

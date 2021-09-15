@@ -13,11 +13,15 @@
 <!-- header -->
 
 <body class="page-body">
-  <header class="page-header container">
+  <header class="page-header">
     <div class="page-header__content">
       <div class="page-header__link">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/headermobile.svg" width="191" height="37" alt="Логотип сайта Кэт энерджи">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logotablet.svg">
+            <source media="(min-width: 1440px)" srcset="img/logodesktop.svg">
+            <img class="page-header__logo" src="img/headermobile.svg" alt="Логотип магазина">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -47,9 +51,9 @@
 
   <!-- main -->
 
-  <main class="page-main matching container">
+  <main class="page-main matching">
     <h1 class="matching__programs">Подбор программы</h1>
-    <form class="matching__form" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="matching__form container" action="https://echo.htmlacademy.ru" method="POST">
       <div class="matching__form-inner">
         <fieldset class="matching__form-questionnaire">
           <legend class="matching__text">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
@@ -63,7 +67,7 @@
               <input class="matching__interaction" id="appointment-weight" type="number" name="weight" placeholder="7">
             </li>
             <li class="matching__item">
-              <label class="matching__group">Возраст (лет):*</label>
+              <label class="matching__group">Возраст (лет):</label>
               <input class="matching__interaction" id="appointment-age" type="number" name="age" placeholder="7">
             </li>
           </ul>
@@ -90,7 +94,7 @@
       </div>
 
       <fieldset class="matching__form-owner">
-        <legend class="matching__heading">Контактные данные <span class="matching__heading--text">(владельца кота)</span></legend>
+        <legend class="matching__heading">Контактные данные <span class="matching__data">(владельца кота)</span></legend>
         <ul class="matching__owner">
           <li class="matching__detail">
             <label class="matching__number" for="appointment-email">E-mail:*</label>
